@@ -36,3 +36,134 @@
     transform: rotate(360deg);
   }
 }
+
+/* 🌼 Base Styling */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f2;
+}
+
+/* 🌼 Navbar */
+.navbar {
+  background-color: #f2b880;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* 🌼 Order Form */
+.form-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  background-color: #ffeede;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  color: #d97706;
+  margin-bottom: 20px;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input,
+.form-textarea,
+.form-file {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #f2b880;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* 🔴 Error Messages */
+.error-text {
+  color: #e63946;
+  font-size: 14px;
+  margin-top: -5px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/* 📂 File Upload Preview */
+.file-preview {
+  font-size: 15px;
+  color: #555;
+  background-color: #fff3e6;
+  border: 1px dashed #f2b880;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin: 8px 0;
+  text-align: left;
+}
+
+/* 🟠 Submit Button */
+.submit-button {
+  background-color: #f2b880;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #e09f62;
+}
+
+.submit-button:disabled {
+  background-color: #f5cda5;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+/* ✅ Success Message */
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* ❌ Error Message (global, not field-level) */
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-size: 15px;
+  text-align: center;
+}
